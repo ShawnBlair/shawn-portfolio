@@ -1,0 +1,1232 @@
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 5; /*coulda been 2 but i feel like theres an overlap*/
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  font-family: "Cookie", cursive;
+  font-size: xx-large;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.navbar li.active {
+  /* font-weight: bold; */
+  color: black;/*skyblue;*/
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: black;/*skyblue;*/
+  /*left: -5px;  Position the underline to the left of the button */
+}
+
+.imgsection {
+  position: relative;
+  width:  200px;
+}
+
+.bordered-image {
+  /* border: 10px solid; */
+  height: 325px;
+  width: 300px;
+  animation: wobble 8s ease-in-out infinite 1s;
+  
+}
+
+.caveat-section {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.content {
+  width: 100%;
+}
+
+.section {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px auto; /* Center align sections horizontally *//*margin ilikuwa:375px; /*margin ilikuwa: 10px 0*/
+  border-radius: 10px;
+  /* max-width: 600px; */
+  width: 600px;/*ilikuwa 100%;*/
+  box-sizing: border-box;
+  font-family: "Cookie", cursive;
+  font-size: 25px;  
+  /* font-family: "Caveat", cursive; */
+}
+
+.section h2,h3 {
+  font-family: "Fredericka the Great", serif;
+}
+
+.section h3 {
+  font-size: 25px;
+}
+
+.section p {
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+}
+
+.section span {
+  font-family: "Fredericka the Great", serif;
+  font-size: 14px;
+}
+
+#section1 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px auto; /* Center align sections horizontally *//*margin ilikuwa:375px; /*margin ilikuwa: 10px 0*/
+  border-radius: 10px;
+  width: 600px;/*ilikuwa 100%;*/
+  box-sizing: border-box;
+}
+
+.containerbio {
+  position: absolute;
+  /* width: 600px; */
+  width: 560px;
+  height: 285px;/*was229px*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 105px;
+  /* background: url('/public/ransomizerfont-img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+.containerbio .box {
+  position: relative;
+  top: 0;
+  /* width: 3.42vw;
+  height: 3.42vw;   */
+  flex: 0 0 calc(100% / 12); /* Adjust the divisor based on the number of boxes per row */
+  height: calc(100% / 7); /* Adjust the divisor based on the number of rows */
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.containerbio .box.active {
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  pointer-events: none;
+  animation: hovr 1s linear forwards;
+}
+
+@keyframes hovr {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) rotate(720deg);
+  }
+}
+
+.logo {
+  width: 50px;  /* Adjust the size as needed */
+  height: auto;
+  /*margin: 0 10px;  /* Space between logos */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 13px;
+}
+
+.logo:hover {
+  transform: translateY(-5px);  /* Move up when hovered */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);  /* Glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo2 {
+  width: 75px;  /* Adjust the size as needed */
+  height: auto;
+  /*margin: 0 10px;   Space between logos */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.logo2:hover {
+  transform: translateY(-5px);  /* Move up when hovered */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);  /* Glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logos {
+  padding: 10px 20px;
+  position: relative;
+  width: 83%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 26px;
+  margin-right: 26px;
+  border-radius: 10px;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3; /* Ensure the overlay is below the textbox */  
+  border-radius: 10px;
+}
+
+.links {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  padding: 10px 20px;
+  position: relative;
+  width: 35%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 26px;
+  border-radius: 10px;
+}
+
+.container2 {
+  padding: 10px 20px;
+  position: relative;
+  width: 45%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  margin: 2.5%;  
+  overflow: hidden;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3; /* Ensure the overlay is below the textbox */  
+  border-radius: 10px;
+}
+
+.skill {  
+  /*width: calc(83.3% * 6);  Adjust based on number of items */
+  display: flex;
+  /* gap: 26px; */
+  flex-wrap: nowrap;
+  justify-content: flex-start;/*i guess if you remove position attribbute it will be smoother*/
+  position: relative;
+  height: 550px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+}
+
+.overlay4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.overlay5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;/* color: rgba(0, 0, 0, 0.5); */
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Fredericka the Great", serif;
+  font-size: x-large;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.skillgen {
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 26px;
+  margin-right: 26px;
+  margin-top: 20px;
+  /* mask: linear-gradient(
+    90deg, 
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  ); works*/
+  height: 580px;
+}
+
+.covskills1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3; /* Ensure the overlay is below the textbox */  
+  border-radius: 10px;
+}
+
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;/* color: rgba(0, 0, 0, 0.5); */
+  top: -100%;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 1s ease-in; /* Slide down transition */
+  font-family: "Fredericka the Great", serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.container2:hover .cover{
+  top: 0;
+  display: flex;
+}
+
+.container21:hover .cover{
+  top: 0;
+  display: flex;
+}
+
+.wkexperience {
+  display: flex;
+  justify-items: center;
+  columns: 2;
+  column-gap: 2.5%;
+}
+
+.tb2 {
+  position: relative;
+  color:white;
+  z-index: 4;
+}
+
+.hover-word {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;/* color: rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  font-family: "Fredericka the Great", serif;
+  font-size: xx-large;
+  text-align: center;
+  z-index: 5;
+}
+
+.container:hover .hover-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textbox {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+  z-index: 4; /* Ensure the textbox is above the overlay */
+}
+
+.skills1 {
+  padding: 10px 20px;
+  position: relative;
+  width: 83.3%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 26px;
+  margin-right: 26px;
+  border-radius: 10px;
+}
+
+.skills2 {
+  /* padding: 10px 20px; */
+  position: relative;
+  transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+  /* height: 530px; */
+  height: 100%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;  
+  /* animation: scroll 30s linear infinite; */
+  /* width: 100%; */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.introsum {
+  /* color: rgba(255, 255, 255, 0.9); */
+  color: white;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large; 
+  width: 500px;
+  margin-top: 100px;
+}
+
+.intronpic {
+display: flex;
+width: 800px;
+height: 425px;
+}
+
+.titlenav {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 60px;
+  font-family: "Yesteryear", cursive;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  /* transition: transform 0.2s ease-out, color 0.2s ease-out; */
+  /* Added transition for the color change as well */
+}
+
+.titlenav.hovering {
+  color: #ff0000; /* /*Change the color when hovering whole class not working likely */
+  /*transform: scale(1.1); /* Scale up slightly when hovering */
+}
+
+label /*.lc1*/ {
+  /* width: 10%; */
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove padding */
+  /*margin: 0;  Remove margin */
+  transition: all 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+input {
+  display: none;
+}
+
+input:checked + label /*.lc1*/ {
+  width: 352px;  
+  transition: all 2s cubic-bezier(0.42, 0, 0.58, 1); /* Smooth and gradual easing */
+}
+
+.covskills1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3; /* Ensure the overlay is below the textbox */  
+  border-radius: 10px;
+}
+
+.tb3 {
+  color: white;
+  z-index: 4;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0; 
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); Change the color for the overlay effect */
+  background-image: url('/public/newspaper-pieces.jpg');
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  /* z-index: 2; Ensure it is behind the dots */
+}
+
+.timeline .overlayt {
+  content: '';
+  position: absolute;
+  width: 10px;
+  /* background-image: url('/public/newspaper-pieces.jpg'); */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* top: 2320px;
+  bottom: 1949px; */
+  /* left: 19%; */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 2;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: -17px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  top: 15px;
+  border-radius: 50%;
+  z-index: 2; /* Ensure it is above the line but below the overlay */
+}
+
+.dot-overlay {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 245.9px;
+  top: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.dot-overlayl {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: -37px;
+  top: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color */
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* Left Container Styles */
+.left {
+  left: 0;
+}
+
+.left::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 15px;
+  left: 102%;
+  border-radius: 50%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Right Container Styles */
+.right {
+  left: 50%;
+}
+
+.right::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 15px;
+  left: -17%;
+  border-radius: 50%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  z-index: 3;
+}
+
+.container .label {
+  position: absolute;
+  top: 20px;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');  
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+}
+
+.container .label .overlaylabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 3; /* Ensure the overlay is above the label background but below the text */
+}
+
+.container .label span {
+  position: relative;
+  color: white; /* Ensure the text is white */
+  z-index: 4; /* Ensure the text is above the overlay */
+}
+
+.left .label {
+  left: calc(50% + 170px);
+  top: 15px;
+}
+
+.label.four4 {
+  left: calc(50% + 170px);
+  top: 21.5px;
+}
+
+.right .label {
+  left: calc(50% - 260px);
+  top: 15px;
+}
+
+/* Keyframes for the wobbling animation */
+ @keyframes wobble {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }/*ref; React Portfolio Website Tutorial - Portfolio Website Using React - React JS Portfolio Website*/
+} 
+
+
+#hamburger-nav {
+  display: none;
+}
+
+.titlenav1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 60px;
+  font-family: "Yesteryear", cursive;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  /* transition: transform 0.2s ease-out, color 0.2s ease-out; */
+  /* Added transition for the color change as well */
+}
+
+.hamburger-navbar {
+  /* position: relative;
+  display: flex;
+  width: 200px; */
+  /* display: inline-block; */
+  /* margin-top: 12%;
+  margin-right: 20%; */
+
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 5; /*coulda been 2 but i feel like theres an overlap*/
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  font-family: "Cookie", cursive;
+  font-size: xx-large;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3 ease-in-out;
+  border-radius: 5px;
+}
+
+.menu/*.open*/ {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* width: fit-content; */
+  width: 100%;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu.open {
+  /* max-height: 180px; */
+  max-height: fit-content;
+  display: block;
+  width: 230px;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+}
+
+.containerbio1 {
+  position: absolute;
+  /* width: 600px; */
+  width: 560px;
+  height: 285px;/*was229px*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 105px;
+  /* background: url('/public/ransomizerfont-img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+.containerbio1 .box {
+  position: relative;
+  top: 0;
+  /* width: 3.42vw;
+  height: 3.42vw;   */
+  flex: 0 0 calc(100% / 12); /* Adjust the divisor based on the number of boxes per row */
+  height: calc(100% / 7); /* Adjust the divisor based on the number of rows */
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.containerbio1 .box.active {
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  pointer-events: none;
+  animation: hovr 1s linear forwards;
+}
+
+@keyframes hovr {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) rotate(720deg);
+  }
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+  transform: none;
+}
+
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+  transform: none;
+}
+
+.imgsection1 {
+  position: relative;
+  width:  330px;
+  justify-self: center;
+}
+
+.introsum1 {
+  /* color: rgba(255, 255, 255, 0.9); */
+  color: white;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large; 
+  width: 500px;
+  /* text-align: center; */
+}
+
+#section11 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px auto; /* Center align sections horizontally *//*margin ilikuwa:375px; /*margin ilikuwa: 10px 0*/
+  border-radius: 10px;
+  width: 600px;/*ilikuwa 100%;*/
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.container21 {
+  padding: 10px 20px;
+  position: relative;
+  /* width: fit-content; */
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  margin: 2.5%;  
+  overflow: hidden;
+}
+
+#section31 {
+  height: 1540px;
+  /* height: fit-content; */
+}
+
+.timeline1 {
+  position: relative;
+  /* height: 100%; */
+  height: 1370px;
+}
+
+.timeline1::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* top: 2600px;
+  bottom: 1949px; */
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+  z-index: 2;
+}
+
+.timeline1-overlay {
+  position: absolute;
+  width: 10px;
+  /* background-image: url('/public/newspaper-pieces.jpg'); */
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+  z-index: 3;
+}
+
+.left2 {
+  /* top: 170px; */
+  top: 32%;
+  left: 40px;
+  width: 75%;
+  position: absolute;
+}
+
+.left1 {
+  /* top: 350px; */
+  top: 82%;
+  left: 40px;
+  width: 75%;
+  position: absolute;
+}
+
+.left1::after {
+  display: none;
+}
+
+.label.four41 {
+  left: 66px;
+  position: absolute;
+    top: 78.5%;
+    width: 80px;
+    text-align: center;
+    background-image: url('/public/newspaper-pieces.jpg');
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    z-index: 4;
+}
+
+.four41 .overlaylabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 5; /* Ensure the overlay is above the label background but below the text */
+}
+
+.four41 span {
+  position: relative;
+  color: white;
+  z-index: 5;
+}
+
+.four41::after {
+  content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: -51px;
+    background-image: url('/public/newspaper-pieces.jpg');
+    top: 2px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.label1left::after {
+  content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: -51px;
+    background-image: url('/public/newspaper-pieces.jpg');
+    top: 5px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.label1left {
+  position: absolute;
+    top: 28.3%;
+    width: 80px;
+    text-align: center;
+    background-image: url('/public/newspaper-pieces.jpg');
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    z-index: 4;
+    left: 66px;
+}
+
+.dot-overlayl {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -51px;
+  top: -45px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+div.container.right1 {
+  top: 80px;
+  left: 40px;
+  width: 75%;
+  position: absolute;
+}
+
+.container.right1::after {
+  display: none;
+}
+
+.container.left2::after {
+  display: none;
+}
+
+.container.right2::after {
+  display: none;
+}
+
+.label1::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -51px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  top: 15px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.dot-overlayl {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 102%;
+  top: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.dot-overlay21 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -51px;
+  top: -53px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.label1 {
+  position: absolute;
+  top: 12px;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+  left: 66px;
+  /* left: 190px; */
+}
+
+.label1 .overlaylabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 5; /* Ensure the overlay is above the label background but below the text */
+}
+
+.label1left .overlaylabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 5; /* Ensure the overlay is above the label background but below the text */
+}
+
+.label1left span {
+  position: relative;
+  color: white;
+  z-index: 5;
+}
+
+.label1 span {
+  position: relative;
+  color: white;
+  z-index: 5;
+}
+
+.label3 {
+  position: absolute;
+  top: 53.42%;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+  /* left: 12%; */
+  left: 66px;  
+  transition: height 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.label3 .overlaylabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 5; /* Ensure the overlay is above the label background but below the text */
+}
+
+.label3::after {
+  left: -51px;
+  /* top: 35px; */
+  content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: -17px;
+    background-image: url('/public/newspaper-pieces.jpg');
+    top: 3px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.label3 span {
+  position: relative;
+  color: white;
+  z-index: 5;
+}
+
+.dot-overlay {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -17%;
+  top: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.dot-overlay2 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -51px;
+  right: -17px;
+  top: -46px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+div.container.right2 {
+  /* top: 260px; */
+  top: 57%;
+  left: 40px;
+  width: 75%;
+  position: absolute;
+}
+
+.skilltwo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between rows as needed */
+  /* justify-content: flex-start; */
+  justify-content: center;
+  position: relative;
+  height: 550px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+}
+
+input:checked + .labelh {
+  /* width: 352px; */
+  width: 484px;
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.skills21 {
+  /* padding: 10px 20px; */
+  position: relative;
+  height: fit-content;
+  /* height: 530px; */
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;  
+  /* animation: scroll 30s linear infinite; */
+  /* width: 100%; */
+  width: 484px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.labelh {
+  width: 94.3%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.overlay51 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  /* color: rgba(0, 0, 0, 0.5); */
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  font-family: "Fredericka the Great", serif;
+  font-size: x-large;
+  /* writing-mode: sideways-lr;
+  text-orientation: upright; */
+  padding: 5px;  
+}
+
+@media screen and (max-width: 1200px){
+  .desktoprect {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+}
