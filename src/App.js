@@ -240,7 +240,7 @@ function toggleMenufunc() {
         who aims to use information and communication technology to make a positive impact on people's lives.
         </div>
         <div className='imgsection'>
-        <img src='/sbimg.jpg' alt='My Image' className="bordered-image" />
+        <img src='./sbimg.jpg' alt='My Image' className="bordered-image" />
         <div className='border-image' style={{ borderImage: 'url("/assets/newspaper-pieces.jpg") 30 30 round' }}></div>
         {/* <div className='cropped-border'> style={{ borderImage: 'url("/newspaper-pieces.jpg") 30 30 round' }}*/}
         {/* <img src='/ripped-paper.jpg' alt='My Border' className='image-border'/> */}
