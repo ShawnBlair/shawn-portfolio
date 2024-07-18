@@ -78,7 +78,7 @@ function App() {
   let cb1 = document.querySelector('.containerbio1')
   
   // let count = 1000;
-  let count = 42;
+  let count = 84;
   for(let i=0; i<count; i++){
     let box = document.createElement('div');
     box.className = "box";
@@ -97,7 +97,7 @@ function App() {
 
       function getRandomValue(){
         // return `${Math.random() * 2000 - 1000}px`;
-        return `${Math.random() * 84 - 42}px`;
+        return `${Math.random() * 168 - 84}px`;
       }
 
       let angleValue = Math.random() * 360;
