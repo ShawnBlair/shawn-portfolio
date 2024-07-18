@@ -79,6 +79,7 @@ function App() {
   
   // let count = 1000;
   let count = 84;
+  //for local development, if the number of boxes is alot after refreshing twice, let count be 42
   for(let i=0; i<count; i++){
     let box = document.createElement('div');
     box.className = "box";
@@ -98,6 +99,8 @@ function App() {
       function getRandomValue(){
         // return `${Math.random() * 2000 - 1000}px`;
         return `${Math.random() * 168 - 84}px`;
+        //for local development, if the number of boxes is alot after refreshing twice, let return 
+        // be -> return `${Math.random() * 84 - 42}px`;
       }
 
       let angleValue = Math.random() * 360;
