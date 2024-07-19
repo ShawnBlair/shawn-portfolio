@@ -440,7 +440,7 @@ height: 425px;
   /*transform: scale(1.1); /* Scale up slightly when hovering */
 }
 
-label /*.lc1*/ {
+/*label*/ .lc1 {
   /* width: 10%; */
   margin: 0 10px;
   display: flex;
@@ -455,7 +455,7 @@ input {
   display: none;
 }
 
-input:checked + label /*.lc1*/ {
+input:checked + /*label*/ .lc1 {
   width: 352px;  
   transition: all 2s cubic-bezier(0.42, 0, 0.58, 1); /* Smooth and gradual easing */
 }
@@ -1229,4 +1229,271 @@ input:checked + .labelh {
   #hamburger-nav {
     display: flex;
   }
+}
+
+@media screen and (max-width: 480px){
+  .desktoprect {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    width: 480px;
+  }
+
+  .App {
+    position: relative;
+    z-index: 1;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.introsum1 {
+  /* color: rgba(255, 255, 255, 0.9); */
+  color: white;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  width: 440px;
+  /* text-align: center; */
+}
+
+#section11 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 460px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.containerbio1 {
+  position: absolute;
+  /* width: 600px; */
+  width: 423px;
+  height: 197px;/*was229px*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 105px;
+  /* background: url('/public/ransomizerfont-img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+.containerbio1 .box {
+  position: relative;
+  top: 0;
+  /* width: 3.42vw;
+  height: 3.42vw;   */
+  flex: 0 0 calc(100% / 12); /* Adjust the divisor based on the number of boxes per row */
+  height: calc(100% / 7); /* Adjust the divisor based on the number of rows */
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.containerbio1 .box.active {
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  pointer-events: none;
+  animation: hovr 1s linear forwards;
+}
+
+.section {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px auto;
+  border-radius: 10px;
+  /* max-width: 600px; */
+  width: 460px;
+  box-sizing: border-box;
+  font-family: "Cookie", cursive;
+  font-size: 25px;
+  /* font-family: "Caveat", cursive; */
+}
+
+.label1 {
+  position: absolute;
+  top: 12px;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+  left: 58px;
+}
+
+div.container.right1 {
+  top: 80px;
+  left: 32px;
+  width: 75%;
+  position: absolute;
+}
+
+.label1left {
+  position: absolute;
+  top: 28.68%;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+  left: 58px;
+}
+
+.left2 {
+  /* top: 170px; */
+  top: 32.45%;
+  left: 32px;
+  width: 75%;
+  position: absolute;
+}
+
+.label3 {
+  position: absolute;
+  top: 53.42%;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+  left: 58px;
+}
+
+div.container.right2 {
+  /* top: 260px; */
+  top: 57%;
+  left: 32px;
+  width: 75%;
+  position: absolute;
+}
+
+.label.four41 {
+  left: 58px;
+  position: absolute;
+  top: 78.5%;
+  width: 80px;
+  text-align: center;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 4;
+}
+
+.left1 {
+  /* top: 350px; */
+  top: 82%;
+  left: 32px;
+  width: 75%;
+  position: absolute;
+}
+
+#section31 {
+  height: 1579px;
+}
+
+.timeline1::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  top: 0;
+  bottom: -60px;
+  left: 5%;
+  margin-left: -3px;
+  z-index: 2;
+}
+
+.timeline1-overlay {
+  position: absolute;
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: -60px;
+  left: 5%;
+  margin-left: -3px;
+  z-index: 3;
+}
+
+.skills1 {
+  padding: 10px 20px;
+  position: relative;
+  width: 83.3%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 16px;
+  margin-right: 26px;
+  border-radius: 10px;
+}
+
+.skillgen {
+  width: 93%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+  height: 580px;
+}
+
+input:checked + .labelh {
+  /* width: 352px; */
+  width: 371px;
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.overlay51 {
+  width: 98%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  /* color: rgba(0, 0, 0, 0.5); */
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  font-family: "Fredericka the Great", serif;
+  font-size: x-large;
+  padding: 5px;
+}
+
+.skilltwo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  position: relative;
+  height: 570px;
+  background-image: url('/public/newspaper-pieces.jpg');
+  border-radius: 10px;
+}
+
+.logos {
+  padding: 10px 20px;
+  position: relative;
+  width: 83%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 16px;
+  margin-right: 26px;
+  border-radius: 10px;
+}
 }
