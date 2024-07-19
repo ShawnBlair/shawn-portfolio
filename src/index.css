@@ -1231,14 +1231,14 @@ input:checked + .labelh {
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 380px){
   .desktoprect {
     display: none;
   }
 
   #hamburger-nav {
     display: flex;
-    width: 480px;
+    width: 380px;
   }
 
   .App {
@@ -1259,7 +1259,7 @@ input:checked + .labelh {
   font-weight: 400;
   font-style: normal;
   font-size: x-large;
-  width: 440px;
+  width: 340px;
   /* text-align: center; */
 }
 
@@ -1268,7 +1268,7 @@ input:checked + .labelh {
   background-color: rgba(255, 255, 255, 0.9);
   margin: 10px auto;
   border-radius: 10px;
-  width: 460px;
+  width: 360px;
   box-sizing: border-box;
   margin-top: 30px;
 }
@@ -1276,8 +1276,8 @@ input:checked + .labelh {
 .containerbio1 {
   position: absolute;
   /* width: 600px; */
-  width: 423px;
-  height: 197px;/*was229px*/
+  width: 340px;/*same as text width and height*/
+  height: 394px;/*was229px*/
   display: flex;
   flex-wrap: wrap;
   margin-top: 105px;
@@ -1312,7 +1312,7 @@ input:checked + .labelh {
   margin: 10px auto;
   border-radius: 10px;
   /* max-width: 600px; */
-  width: 460px;
+  width: 360px;
   box-sizing: border-box;
   font-family: "Cookie", cursive;
   font-size: 25px;
