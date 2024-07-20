@@ -1440,23 +1440,23 @@ div.container.right2 {
 }
 
 .skillgen {
-  width: 93%;
+  width: 96%;
   overflow: hidden;
   border-radius: 10px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 20px;
-  height: 580px;
+  height: 780px;
 }
 
 input:checked + .labelh {
   /* width: 352px; */
-  width: 371px;
+  width: 288px;
   transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .overlay51 {
-  width: 98%;
+  width: 96%;
   height: 100%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
@@ -1482,7 +1482,7 @@ input:checked + .labelh {
   /* justify-content: flex-start; */
   justify-content: center;
   position: relative;
-  height: 570px;
+  height: 770px;
   background-image: url('/public/newspaper-pieces.jpg');
   border-radius: 10px;
 }
