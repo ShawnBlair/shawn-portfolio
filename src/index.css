@@ -1258,8 +1258,8 @@ input:checked + .labelh {
   font-family: "Fredericka the Great", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: x-large;
-  width: 340px;
+  font-size: 20px;
+  width: 350px;
   /* text-align: center; */
 }
 
@@ -1276,8 +1276,8 @@ input:checked + .labelh {
 .containerbio1 {
   position: absolute;
   /* width: 600px; */
-  width: 340px;/*same as text width and height*/
-  height: 394px;/*was229px*/
+  width: 320px;/*same as text width and height*/
+  height: 562px;/*was229px*/
   display: flex;
   flex-wrap: wrap;
   margin-top: 105px;
@@ -1329,19 +1329,19 @@ input:checked + .labelh {
   padding: 2px 5px;
   font-size: 12px;
   z-index: 4;
-  left: 58px;
+  left: 53px;
 }
 
 div.container.right1 {
   top: 80px;
-  left: 32px;
-  width: 75%;
+  left: 27px;
+  width: 70%;
   position: absolute;
 }
 
 .label1left {
   position: absolute;
-  top: 28.68%;
+  top: 38.68%;
   width: 80px;
   text-align: center;
   background-image: url('/public/newspaper-pieces.jpg');
@@ -1349,20 +1349,20 @@ div.container.right1 {
   padding: 2px 5px;
   font-size: 12px;
   z-index: 4;
-  left: 58px;
+  left: 53px;
 }
 
 .left2 {
   /* top: 170px; */
-  top: 32.45%;
-  left: 32px;
-  width: 75%;
+  top: 42.45%;
+  left: 27px;
+  width: 70%;
   position: absolute;
 }
 
 .label3 {
   position: absolute;
-  top: 53.42%;
+  top: 73.42%;
   width: 80px;
   text-align: center;
   background-image: url('/public/newspaper-pieces.jpg');
@@ -1370,21 +1370,21 @@ div.container.right1 {
   padding: 2px 5px;
   font-size: 12px;
   z-index: 4;
-  left: 58px;
+  left: 53px;
 }
 
 div.container.right2 {
   /* top: 260px; */
-  top: 57%;
-  left: 32px;
-  width: 75%;
+  top: 77%;
+  left: 27px;
+  width: 70%;
   position: absolute;
 }
 
 .label.four41 {
-  left: 58px;
+  left: 53px;
   position: absolute;
-  top: 78.5%;
+  top: 105.5%;
   width: 80px;
   text-align: center;
   background-image: url('/public/newspaper-pieces.jpg');
@@ -1396,14 +1396,14 @@ div.container.right2 {
 
 .left1 {
   /* top: 350px; */
-  top: 82%;
-  left: 32px;
-  width: 75%;
+  top: 109%;
+  left: 27px;
+  width: 70%;
   position: absolute;
 }
 
 #section31 {
-  height: 1579px;
+  height: 1979px;
 }
 
 .timeline1::before {
@@ -1412,7 +1412,7 @@ div.container.right2 {
   width: 10px;
   background-image: url('/public/newspaper-pieces.jpg');
   top: 0;
-  bottom: -60px;
+  bottom: -465px;
   left: 5%;
   margin-left: -3px;
   z-index: 2;
@@ -1423,7 +1423,7 @@ div.container.right2 {
   width: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
-  bottom: -60px;
+  bottom: -465px;
   left: 5%;
   margin-left: -3px;
   z-index: 3;
