@@ -257,7 +257,7 @@ function toggleMenufunc() {
           
             <h2>Bio</h2>
             <div>I am a dedicated Information Communication Technology enthusiast who is quite 
-              experienced in various coding languages and software, including React JavaScript, C#, 
+              experienced in various coding languages and software, including React JavaScript, Python, C#, 
               Visual Basic, C++, and MySQL. I have developed projects such as websites, progressive web 
               applications, a soccer management system, and a point of sale system. My skills include software 
               development, hardware maintenance, digital platform management, and database systems creation 
@@ -272,13 +272,15 @@ function toggleMenufunc() {
             <div className='container2'>
             <div className="cover">Creptie School</div><div className="overlay2"></div><div className='tb2'>
               <h3>May 2023 - To date</h3>
-            As a tutor at a coding institution;
+            As a tutor at a coding institution, I;
               <ol>
-                <li>I deliver intensive web development training programs.</li>
+                <li>Deliver intensive web development training programs.</li>
                 <li>Focus on hands-on learning and real-world applications, including robotics.</li>
                 <li>Engage students in STEAM-based immersive projects.</li>
                 <li>Aim to equip students with the skills and knowledge needed to excel in their field.</li>
                 <li>Help students become resourceful members of society.</li>
+                <li>Handle the transport and logistics role of the institution</li>
+                <li>Work in an agile development environment</li>
               </ol>
               </div></div>
               <div className='container2'>
@@ -342,6 +344,7 @@ function toggleMenufunc() {
               programs:
               <ol>
                 <li value={'1'}>React JavaScript</li>
+                <li>Python progamming language</li>
                 <li>C# programming language</li>
                 <li>Visual Basic (.NET) language</li>
                 <li>C++ programming language</li>
@@ -387,7 +390,7 @@ function toggleMenufunc() {
                   <li>User Interface design</li>
                   <li>Storage systems and management</li>
                   <li>Creation of systems and websites using visual basic (.net), C sharp, hypertext markup 
-                  language(html) and JavaScript as well as React and Cascading Style Sheets</li>
+                  language(html) and JavaScript as well as React, Python and Cascading Style Sheets</li>
                   <li>Robot creation as well as creation of programs that facilitate their functioning</li>
                   <li>Data annotation</li>
                 </ol>
@@ -514,11 +517,11 @@ function toggleMenufunc() {
           
             <h2>Bio</h2>
             <div>I am a dedicated Information Communication Technology enthusiast who is quite 
-              experienced in various coding languages and software, including React JavaScript, C#, 
+              experienced in various coding languages and software, including React JavaScript, Python, C#, 
               Visual Basic, C++, and MySQL. I have developed projects such as websites, progressive web 
               applications, a soccer management system, and a point of sale system. My skills include software 
               development, hardware maintenance, digital platform management, and database systems creation 
-              and management. I excel in teamwork, independent work, critical thinking, and communication. 
+              and management. I thrive in a scrum and agile setting, excel in teamwork, independent work, critical thinking, and communication. 
               Additionally, I have experience in both traditional and digital marketing and advertising. 
               I aim to leverage technology to solve people's everyday challenges and at least put a smile on 
               their faces.</div>
@@ -530,13 +533,15 @@ function toggleMenufunc() {
             <div className='container21'>
             <div className="cover">Creptie School</div><div className="overlay2"></div><div className='tb2'>
               <h3>May 2023 - To date</h3>
-              As a tutor at a coding institution;
+              As a tutor at a coding institution, I;
               <ol>
-                <li>I deliver intensive web development training programs.</li>
+                <li>Deliver intensive web development training programs.</li>
                 <li>Focus on hands-on learning and real-world applications, including robotics.</li>
                 <li>Engage students in STEAM-based immersive projects.</li>
                 <li>Aim to equip students with the skills and knowledge needed to excel in their field.</li>
-                <li>Help students become resourceful members of society.</li>
+                <li>Help students become resourceful members of society.</li>                
+                <li>Handle the transport and logistics role of the institution</li>
+                <li>Work in an agile development environment</li>
               </ol>
               </div></div>
               <div className='container21'>
@@ -604,6 +609,7 @@ function toggleMenufunc() {
               programs:
               <ol>
                 <li value={'1'}>React JavaScript</li>
+                <li>Python programming language</li>
                 <li>C# programming language</li>
                 <li>Visual Basic (.NET) language</li>
                 <li>C++ programming language</li>
