@@ -369,29 +369,10 @@ function toggleMenufunc() {
               {/* <>^Locomotive Page Scroll using HTML CSS JS - Smooth Scroll Animation @OnlinewebustaadCom
                ^for people who prefre reduced motion; Create an infinite horizontal scroll animation
                ^Stunning HTML & CSS Card Animation</> */}
-              <div className='skillgen'><div className='skill'>
-              here
               
-              <div className="covskills1"></div>           
-              {checkedInput === 'c3' && <><div className='tb3'>
-                Ability to ease situations through use of the following proficiencies effectively and accordingly;
-                <ol>
-                  <li value={'1'}>Integrity</li>
-                  <li>Effective communication (verbal and written)</li>
-                  <li>Teamwork</li>
-                  <li>Creativity</li>
-                  <li>Critical thinking</li>
-                  <li>Willingness to learn</li>
-                  <li>Responsibility</li>
-                  <li>Prudency</li>
-                  <li>Leadership</li>       
-                  </ol>  
-                The above named proficiencies are just but a few of them.
-                
-              </div></>}</div></label>
 
-              </div>
-              </div>
+              {/* </div>
+              </div> */}
           </div>
                 
           <div id="section4" className="section">
