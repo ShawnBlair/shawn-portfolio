@@ -345,34 +345,12 @@ function toggleMenufunc() {
             <div className='skills1'>
               <div className="covskills1"></div>           
             <div className='tb3'>
-              I am proficient in the following coding languages and software, enabling me to create various 
-              programs:
-              <ol>
-                <li value={'1'}>React JavaScript</li>
-                <li>Python progamming language</li>
-                <li>C# programming language</li>
-                <li>Visual Basic (.NET) language</li>
-                <li>C++ programming language</li>
-                <li>Object-Oriented programming</li>
-                <li>Internet-based programming languages</li>
-                <li>MySQL (an open-source relational database management system)</li>
-                <li>Microsoft software like Visual Studio</li>
-                <li>Online interactive coding platforms like Scrimba</li>
-              </ol>
-              <p>I have built websites from scratch using Scrimba, which provided me with extensive knowledge of 
-              React JavaScript. I continue to enhance my skills with platforms like Visual Studio Code. I have 
-              developed a point-of-sale system using C#, a progressive web app with internet-based programming 
-              languages, and a soccer management system using Visual Basic, among other projects. 
-              Additionally, I can create automated client counter systems and various other applications 
-              using these languages and tools.</p>
-              <p>Other skills I have include or can be grouped into;</p></div></div>
+            <h3>Scrum Study’s Scrum Fundamentals Certification</h3>
+            <p>Acquired a Scrum Fundamentals Certificate</p>
+              </div></div>
               {/* <>^Locomotive Page Scroll using HTML CSS JS - Smooth Scroll Animation @OnlinewebustaadCom
                ^for people who prefre reduced motion; Create an infinite horizontal scroll animation
                ^Stunning HTML & CSS Card Animation</> */}
-              
-
-              {/* </div>
-              </div> */}
           </div>
                 
           <div id="section4" className="section">
