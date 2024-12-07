@@ -219,6 +219,10 @@ function toggleMenufunc() {
               {activeSection === 'section3' && <div className="underline"></div>}
             </li>
             <li className={activeSection === 'section4' ? 'active' : ''} onClick={() => scrollToSection('section4')}>
+              Program Development
+              {activeSection === 'section4' && <div className="underline"></div>}
+            </li>
+            <li className={activeSection === 'section4' ? 'active' : ''} onClick={() => scrollToSection('section4')}>
               Competencies
               {activeSection === 'section4' && <div className="underline"></div>}
             </li>
@@ -261,7 +265,7 @@ function toggleMenufunc() {
               Visual Basic, C++, and MySQL. I have developed projects such as websites, progressive web 
               applications, a soccer management system, and a point of sale system. My skills include software 
               development, hardware maintenance, digital platform management, and database systems creation 
-              and management. I excel in teamwork, independent work, critical thinking, and communication. 
+              and management. I excel in teamwork, independent work, critical thinking and communication. 
               Additionally, I have experience in both traditional and digital marketing and advertising. 
               I aim to leverage technology to solve people's everyday challenges and at least put a smile on 
               their faces.</div>
@@ -335,6 +339,61 @@ function toggleMenufunc() {
             <p>Acquired the Kenya Certificate of Secondary Education.</p>
             </div><div className="hover-word">D.H.S</div></div>
           </div></div>
+
+          <div id="section4" className="section">
+            <h2>Program Development</h2>
+            <div className='skills1'>
+              <div className="covskills1"></div>           
+            <div className='tb3'>
+              I am proficient in the following coding languages and software, enabling me to create various 
+              programs:
+              <ol>
+                <li value={'1'}>React JavaScript</li>
+                <li>Python progamming language</li>
+                <li>C# programming language</li>
+                <li>Visual Basic (.NET) language</li>
+                <li>C++ programming language</li>
+                <li>Object-Oriented programming</li>
+                <li>Internet-based programming languages</li>
+                <li>MySQL (an open-source relational database management system)</li>
+                <li>Microsoft software like Visual Studio</li>
+                <li>Online interactive coding platforms like Scrimba</li>
+              </ol>
+              <p>I have built websites from scratch using Scrimba, which provided me with extensive knowledge of 
+              React JavaScript. I continue to enhance my skills with platforms like Visual Studio Code. I have 
+              developed a point-of-sale system using C#, a progressive web app with internet-based programming 
+              languages, and a soccer management system using Visual Basic, among other projects. 
+              Additionally, I can create automated client counter systems and various other applications 
+              using these languages and tools.</p>
+              <p>Other skills I have include or can be grouped into;</p></div></div>
+              {/* <>^Locomotive Page Scroll using HTML CSS JS - Smooth Scroll Animation @OnlinewebustaadCom
+               ^for people who prefre reduced motion; Create an infinite horizontal scroll animation
+               ^Stunning HTML & CSS Card Animation</> */}
+              <div className='skillgen'><div className='skill'>
+              here
+              
+              <div className="covskills1"></div>           
+              {checkedInput === 'c3' && <><div className='tb3'>
+                Ability to ease situations through use of the following proficiencies effectively and accordingly;
+                <ol>
+                  <li value={'1'}>Integrity</li>
+                  <li>Effective communication (verbal and written)</li>
+                  <li>Teamwork</li>
+                  <li>Creativity</li>
+                  <li>Critical thinking</li>
+                  <li>Willingness to learn</li>
+                  <li>Responsibility</li>
+                  <li>Prudency</li>
+                  <li>Leadership</li>       
+                  </ol>  
+                The above named proficiencies are just but a few of them.
+                
+              </div></>}</div></label>
+
+              </div>
+              </div>
+          </div>
+                
           <div id="section4" className="section">
             <h2>Competencies</h2>
             <div className='skills1'>
