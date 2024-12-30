@@ -162,20 +162,6 @@ function toggleMenufunc() {
   icon.classList.toggle("open")
 }
 
-// function changeBg(){
-//   const images = [
-//     'url{"/public/newspaper-pieces.jpg"}',
-//     'url{"/public/newspaper-piecesI.jpg"}',
-//     'url{"/public/newspaper-piecesII.jpg"}',
-//   ]
-
-//   const section = document.getElementsByClassName('skills1');
-//   const bg = images[Math.floor(Math.random() * images.length)];
-//   section.style.backgroundImage = bg;
-// }
-
-// setInterval(changeBg, 10000);
-
   // const skillRef = useRef(null);
 
   // useEffect(() => {
@@ -235,13 +221,13 @@ function toggleMenufunc() {
               Program Development
               {activeSection === 'section4' && <div className="underline"></div>}
             </li>
-            <li className={activeSection === 'section4' ? 'active' : ''} onClick={() => scrollToSection('section4')}>
+            <li className={activeSection === 'section5' ? 'active' : ''} onClick={() => scrollToSection('section4')}>
               Competencies
-              {activeSection === 'section4' && <div className="underline"></div>}
-            </li>
-            <li className={activeSection === 'section5' ? 'active' : ''} onClick={() => scrollToSection('section5')}>
-              Endorsements
               {activeSection === 'section5' && <div className="underline"></div>}
+            </li>
+            <li className={activeSection === 'section6' ? 'active' : ''} onClick={() => scrollToSection('section5')}>
+              Endorsements
+              {activeSection === 'section6' && <div className="underline"></div>}
             </li>
           </ul>
         </nav>
@@ -368,7 +354,7 @@ function toggleMenufunc() {
                ^Stunning HTML & CSS Card Animation</> */}
           </div>
                 
-          <div id="section4" className="section">
+          <div id="section5" className="section">
             <h2>Competencies</h2>
             <div className='skills1'>
               <div className="covskills1"></div>           
@@ -452,7 +438,7 @@ function toggleMenufunc() {
               </div>
               </div>
           </div>
-          <div id="section5" className="section">
+          <div id="section6" className="section">
   <h2>Endorsements</h2>
   <div className="logos"><div className="overlay3"></div><div className="links">
     {/* LinkedIn */}
