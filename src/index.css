@@ -390,10 +390,11 @@
   padding: 10px 20px;
   position: relative;
   width: 83.3%;
-  /* background-image: url('/public/newspaper-pieces.jpg'); */
+  background-image: url('/public/newspaper-pieces.jpg');
   margin-left: 26px;
   margin-right: 26px;
   border-radius: 10px;
+  animation: slider 8s 2s infinite;
 }
 
 .skills2 {
@@ -661,6 +662,28 @@ input:checked + /*label*/ .lc1 {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }/*ref; React Portfolio Website Tutorial - Portfolio Website Using React - React JS Portfolio Website*/
 } 
+
+@keyframes slider {
+  0% {
+    background-image: url('/public/newspaper-pieces.jpg');
+  }
+
+  25% {
+    background-image: url('/public/newspaper-piecesI.jpg');
+  }
+
+  50% {
+    background-image: url('/public/newspaper-piecesII.jpg');
+  }
+
+  75% {
+    background-image: url('/public/newspaper-piecesI.jpg');
+  }
+
+  100% {
+    background-image: url('/public/newspaper-pieces.jpg');
+  }
+}
 
 
 #hamburger-nav {

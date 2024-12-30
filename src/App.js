@@ -162,19 +162,19 @@ function toggleMenufunc() {
   icon.classList.toggle("open")
 }
 
-function changeBg(){
-  const images = [
-    'url{"/public/newspaper-pieces.jpg"}',
-    'url{"/public/newspaper-piecesI.jpg"}',
-    'url{"/public/newspaper-piecesII.jpg"}',
-  ]
+// function changeBg(){
+//   const images = [
+//     'url{"/public/newspaper-pieces.jpg"}',
+//     'url{"/public/newspaper-piecesI.jpg"}',
+//     'url{"/public/newspaper-piecesII.jpg"}',
+//   ]
 
-  const section = document.getElementsByClassName('skills1');
-  const bg = images[Math.floor(Math.random() * images.length)];
-  section.style.backgroundImage = bg;
-}
+//   const section = document.getElementsByClassName('skills1');
+//   const bg = images[Math.floor(Math.random() * images.length)];
+//   section.style.backgroundImage = bg;
+// }
 
-setInterval(changeBg, 10000);
+// setInterval(changeBg, 10000);
 
   // const skillRef = useRef(null);
 
