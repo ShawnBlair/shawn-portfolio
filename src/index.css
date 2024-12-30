@@ -397,6 +397,16 @@
   animation: slider 8s 2s infinite;
 }
 
+.skIlls1 {
+  padding: 10px 20px;
+  position: relative;
+  width: 83.3%;
+  background-image: url('/public/newspaper-pieces.jpg');
+  margin-left: 26px;
+  margin-right: 26px;
+  border-radius: 10px;
+}
+
 .skills2 {
   /* padding: 10px 20px; */
   position: relative;

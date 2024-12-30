@@ -78,7 +78,7 @@ function App() {
   let cb1 = document.querySelector('.containerbio1')
   
   // let count = 1000;
-  let count = 84;
+  let count = 96; //let count = 84;
   //for local development, if the number of boxes is alot after refreshing twice, let count be 42
   for(let i=0; i<count; i++){
     let box = document.createElement('div');
@@ -98,7 +98,7 @@ function App() {
 
       function getRandomValue(){
         // return `${Math.random() * 2000 - 1000}px`;
-        return `${Math.random() * 168 - 84}px`;
+        return `${Math.random() * 192 - 96}px`;
         //for local development, if the number of boxes is alot after refreshing twice, let return 
         // be -> return `${Math.random() * 84 - 42}px`;
       }
@@ -312,17 +312,17 @@ function toggleMenufunc() {
             <div className="overlaylabel"></div><span>May 2019 – February 2021</span></div>              
             <div className="overlay2"></div>
             <div className="dot-overlay"></div>           
-            <div className='textbox'><h3>Nairobi Technical Training Institute</h3>
+            <div className='textbox'><h3>The Nairobi National Polytechnic</h3>
             <p>Acquired the Diploma in Information Communication Technology</p>
-            </div><div className="hover-word">N.T.T.I</div></div>
+            </div><div className="hover-word">T.N.N.P</div></div>
             <div className='container left'>
             <div className="label">
             <div className="overlaylabel"></div><span>May 2017 – July 2018</span></div>            
             <div className="overlay2"></div>
             <div className="dot-overlayl"></div>          
-            <div className='textbox'><h3>Nairobi Technical Training Institute</h3>
+            <div className='textbox'><h3>The Nairobi National Polytechnic</h3>
             <p>Acquired the Craft Certificate in Information Technology</p>
-              </div><div className="hover-word">N.T.T.I</div></div>
+              </div><div className="hover-word">T.N.N.P</div></div>
               <div className='container right'>
               <div className="label">
               <div className="overlaylabel"></div><span>March 2017 – May 2017</span></div>
@@ -356,7 +356,7 @@ function toggleMenufunc() {
                 
           <div id="section5" className="section">
             <h2>Competencies</h2>
-            <div className='skills1'>
+            <div className='skIlls1'>
               <div className="covskills1"></div>           
             <div className='tb3'>
               I am proficient in the following coding languages and software, enabling me to create various 
