@@ -325,6 +325,11 @@
   display: flex;
 }
 
+.tb3:hover .cover{
+  top: 0;
+  display: flex;
+}
+
 .container21:hover .cover{
   top: 0;
   display: flex;
@@ -375,6 +380,10 @@
   font-size: 15px;
   color: white;
   z-index: 4; /* Ensure the textbox is above the overlay */
+}
+
+.h3 {
+  text-align: center;
 }
 
 .skills1 {

@@ -162,6 +162,19 @@ function toggleMenufunc() {
   icon.classList.toggle("open")
 }
 
+function changeBg(){
+  const images = [
+    'url{"/public/newspaper-pieces.jpg"}',
+    'url{"/public/newspaper-piecesI.jpg"}',
+    'url{"/public/newspaper-piecesII.jpg"}',
+  ]
+
+  const section = document.querySelectorAll('.{skills1}');
+  const bg = images[Math.floor(Math.random() * images.length)];
+  section.style.backgroundImage = bg;
+}
+
+setInterval(changeBg, 1000);
 
   // const skillRef = useRef(null);
 
@@ -344,8 +357,8 @@ function toggleMenufunc() {
             <h2>Program Development</h2>
             <div className='skills1'>
               <div className="covskills1"></div>           
-            <div className='tb3'>
-            <h3>Scrum Study’s Scrum Fundamentals Certification</h3>
+            <div className='tb3'><div className="cover">Creptie School</div>
+            <h3 className='h3'>Scrum Study’s Scrum Fundamentals Certification</h3>
             <p>Acquired a Scrum Fundamentals Certificate</p>
               </div></div>
               {/* <>^Locomotive Page Scroll using HTML CSS JS - Smooth Scroll Animation @OnlinewebustaadCom
