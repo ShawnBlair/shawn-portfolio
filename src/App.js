@@ -169,7 +169,7 @@ function changeBg(){
     'url{"/public/newspaper-piecesII.jpg"}',
   ]
 
-  const section = document.querySelectorAll('.{skills1}');
+  const section = document.getElementsByClassName('skills1');
   const bg = images[Math.floor(Math.random() * images.length)];
   section.style.backgroundImage = bg;
 }
