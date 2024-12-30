@@ -386,15 +386,11 @@
   text-align: center;
 }
 
-.scrump {
-  text-align: center;
-}
-
 .skills1 {
   padding: 10px 20px;
   position: relative;
   width: 83.3%;
-  background-image: url('/public/newspaper-pieces.jpg');
+  /* background-image: url('/public/newspaper-pieces.jpg'); */
   margin-left: 26px;
   margin-right: 26px;
   border-radius: 10px;

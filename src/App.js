@@ -265,6 +265,8 @@ setInterval(changeBg, 1000);
         {/* <div className='cropped-border'> style={{ borderImage: 'url("/newspaper-pieces.jpg") 30 30 round' }}*/}
         {/* <img src='/ripped-paper.jpg' alt='My Border' className='image-border'/> */}
         {/* </div> */}
+        {/* if you want the image to pop out of its own background check this out: "Create an animated 
+        pop-out effect // HTML & CSS" */}
         </div>
         </div>
         <div className="content">
