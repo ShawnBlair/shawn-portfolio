@@ -359,7 +359,7 @@ setInterval(changeBg, 1000);
               <div className="covskills1"></div>           
             <div className='tb3'><div className="cover">Creptie School</div>
             <h3 className='h3'>Scrum Study’s Scrum Fundamentals Certification</h3>
-            <p>Acquired a Scrum Fundamentals Certificate</p>
+            <p className='scrump'>Acquired a Scrum Fundamentals Certificate</p>
               </div></div>
               {/* <>^Locomotive Page Scroll using HTML CSS JS - Smooth Scroll Animation @OnlinewebustaadCom
                ^for people who prefre reduced motion; Create an infinite horizontal scroll animation
