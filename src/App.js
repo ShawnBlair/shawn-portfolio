@@ -174,7 +174,7 @@ function changeBg(){
   section.style.backgroundImage = bg;
 }
 
-setInterval(changeBg, 1000);
+setInterval(changeBg, 10000);
 
   // const skillRef = useRef(null);
 
