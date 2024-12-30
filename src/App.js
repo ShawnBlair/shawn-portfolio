@@ -221,11 +221,11 @@ function toggleMenufunc() {
               Program Development
               {activeSection === 'section4' && <div className="underline"></div>}
             </li>
-            <li className={activeSection === 'section5' ? 'active' : ''} onClick={() => scrollToSection('section4')}>
+            <li className={activeSection === 'section5' ? 'active' : ''} onClick={() => scrollToSection('section5')}>
               Competencies
               {activeSection === 'section5' && <div className="underline"></div>}
             </li>
-            <li className={activeSection === 'section6' ? 'active' : ''} onClick={() => scrollToSection('section5')}>
+            <li className={activeSection === 'section6' ? 'active' : ''} onClick={() => scrollToSection('section6')}>
               Endorsements
               {activeSection === 'section6' && <div className="underline"></div>}
             </li>
