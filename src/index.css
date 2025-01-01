@@ -102,7 +102,7 @@
   position: absolute;
   /* width: 600px; */
   width: 560px;
-  height: 275px;/*was285px;/*was229px*/
+  height: 255px;/*was285px;/*was229px*/
   display: flex;
   flex-wrap: wrap;
   margin-top: 105px;
